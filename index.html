@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f8;
+        }
+
+        .subscription-card {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h2 {
+            color: #39b54a;
+            font-size: 1.5em;
+        }
+
+        .header p {
+            margin: 10px 0;
+            color: #888888;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background-color: #e2e8f0;
+        }
+
+        .price-section, .why-us-section {
+            background-color: #38b2ac;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .price-section h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .price-section p {
+            margin: 5px 0;
+        }
+
+        .sign-up-button {
+            margin-top: 10px;
+            background-color: #bce784;
+            border: none;
+            padding: 10px 20px;
+            color: #333333;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .why-us-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .why-us-section ul li {
+            margin-bottom: 10px;
+        }
+
+      
+        @media (max-width: 600px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="subscription-card">
+        <div class="header">
+            <h2>Join our community</h2>
+            <p>30-day, hassle-free money back guarantee</p>
+            <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+        </div>
+        <div class="content">
+            <div class="price-section">
+                <h3>Monthly Subscription</h3>
+                <p>$29 per month</p>
+                <p>Full access for less than $1 a day</p>
+                <a href="#" class="sign-up-button">Sign Up</a>
+            </div>
+            <div class="why-us-section">
+                <ul>
+                    <li>Tutorials by industry experts</li>
+                    <li>Peer & expert code review</li>
+                    <li>Coding exercises</li>
+                    <li>Access to our GitHub repos</li>
+                    <li>Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li>New videos every week</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
